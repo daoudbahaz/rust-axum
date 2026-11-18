@@ -3,7 +3,6 @@
 //! ```not_rust
 //! cargo run -p example-hello-world
 //! ```
-panic!("test");
 use axum::{response::Html, routing::get, Router};
 
 #[tokio::main]
@@ -20,5 +19,5 @@ async fn main() {
 }
 
 async fn handler() -> Html<&'static str> {
-    Html("<h1>Hello, World!<br>This is from Me!</h1>")
+    Html("<h1>Hello, World!</h1>")
 }

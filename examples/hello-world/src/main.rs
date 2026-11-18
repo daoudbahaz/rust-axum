@@ -3,7 +3,7 @@
 //! ```not_rust
 //! cargo run -p example-hello-world
 //! ```
-
+panic!("test");
 use axum::{response::Html, routing::get, Router};
 
 #[tokio::main]
